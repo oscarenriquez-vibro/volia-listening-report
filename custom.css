@@ -1,0 +1,158 @@
+/* === GENERAL STYLING === */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #222;
+  background-color: #ffffff;
+  margin: 40px;
+  line-height: 1.6;
+}
+
+/* === HEADERS === */
+.jp-RenderedHTMLCommon h1 {
+  font-family: "Segoe UI", "Arial Black", sans-serif;
+  font-size: 28pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7633a9;
+  text-align: center;
+
+  /* Add spacing above and below the text */
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /* Space the title from the lines */
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  /* Add top and bottom borders for "framing" effect */
+  border-top: 3px solid #7633a9;
+  border-bottom: 3px solid #7633a9;
+}
+.jp-RenderedHTMLCommon h2 {
+  font-family: "Segoe UI", "Arial Black", sans-serif;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #333;
+  border-left: 5px solid #7633a9;
+  padding-left: 12px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: 500;
+  color: #555;
+  margin-top: 24px;
+}
+
+/* === PARAGRAPH & TEXT === */
+p {
+  margin: 10px 0;
+}
+
+strong {
+  color: #000;
+}
+
+em {
+  color: #444;
+}
+
+/* === IMAGES === */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  height: auto;
+}
+
+/* === Caption Styling for Images and Widgets === */
+.caption {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+/* === TEXTAREA (used for Whisper transcription) === */
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  background-color: #f8f8f8;
+  font-family: monospace;
+  font-size: 13px;
+  color: #111;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.transcript {
+  text-align: left;
+  font-family: monospace;
+  background: #f9f9f9;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  margin: 12px auto 30px;
+  width: 90%;
+  max-width: 800px;
+  color: #222;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.jp-Accordion {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* === AUDIO PLAYER === */
+.jp-OutputArea audio {
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 400px;  /* prevents it from becoming too wide */
+}
+
+/* === VOILA HEADER STRIPPING === */
+.jp-Notebook {
+  box-shadow: none !important;
+}
+
+/* === PRINT FRIENDLY STYLES === */
+@media print {
+  body {
+    margin: 30mm;
+    font-size: 12pt;
+    color: #000;
+    background: none;
+  }
+
+  h1, h2, h3 {
+    color: #000 !important;
+    border: none !important;
+  }
+
+  textarea {
+    border: 1px solid #999;
+    background-color: #fff;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  audio {
+    display: none; /* Hides audio players for print */
+  }
+}
